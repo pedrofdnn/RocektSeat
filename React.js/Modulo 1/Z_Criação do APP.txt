@@ -1,0 +1,31 @@
+Criação de app básico React
+
+// - CRIAR ESTRUTURA BÁSICA
+
+1.	"Yarn init - y" ou "npm init -y" = para criar o package. json.
+2.	"Yarn add React" ou "npm add react" = para criar a pasta Node_Modules.
+3.	"Yarn add React-dom" ou "npm add React-dom" = para poder transformar o HTML em JS.
+4.	Criar a pasta public – para colocar arquivos do HTML e outros elementos necessários para uso de renderização do meio externo.
+
+// - CONFIGURANDO BABEL
+
+Resumo sobre BABEL – e uma ferramenta que faz com que todos os navegadores interpretem os códigos em Javascript de forma compatível.
+1.	Yarn add @babel/core @babel/cli @babel/preset-env -d - parar criar os arquivos necessários de configuração.
+|| OBS: o -D  de depedencia no final do codigo serve para criar uma versão de desenvolvimento para quando subir o projeto convertido antes de chegar na produção.\\
+
+2.  Criar uma pasta "BABEL.CONFIG.JS" - para criar uma função
+
+|| OBS: Significado de cada função que foi digitada do topico 1.
+@babel/core -> E a biblioteca padrão do BABEL.
+@babel/cli -> seve para utilizar funções dentro do terminal "ex: YARN BABEL -H" ele mostra os comando de ajuda.
+@babel/preset-env -> ele e utilizado para converter o codigo para que os navegadores consigam interpretar o codigo.
+
+// - CRIANDO ARQUIVOS NA SRC(RAIZ).
+
+1 - Criar um arquivo "INDEX.JS" e precisamos executar um comando nos arquivos da pasta raiz para que seja feita uma conversão dos codigos la colocados. || CODIGO -> YARN BABEL SRC/INDEX.JS --OUT-FILE DIST/BUNDLE.JS.
+2 - Para o babel conseguir interpretar os codigos do HTML e necessário instalar um modulo, "yarn add @babel/preset-react -D" e logo depois adcionar o novo modulo na pasta do BABEL.CONFIG.JS - '@BABEL/PRESET-REACT'.
+|| OBS: Apos ter instalado todo os codigos para que ele seja legivel pelo babel, podemos alterar o arquivo INDEX.js da raiz para INDEX.JSX, pois dessa forma o react consegue interpretar os codigos HTML em Javascript.
+
+// INSTLANDO E CONFIGURANDO WEBPACK.
+
+1 - 
