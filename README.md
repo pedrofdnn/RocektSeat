@@ -1,2 +1,2 @@
 # RocektSeat
- Curso da Datasales
+ Curso oferecido da Datasales
