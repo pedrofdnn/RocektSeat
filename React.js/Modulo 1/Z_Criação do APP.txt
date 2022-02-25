@@ -22,10 +22,21 @@ Resumo sobre BABEL – e uma ferramenta que faz com que todos os navegadores int
 
 // - CRIANDO ARQUIVOS NA SRC(RAIZ).
 
-1 - Criar um arquivo "INDEX.JS" e precisamos executar um comando nos arquivos da pasta raiz para que seja feita uma conversão dos codigos la colocados. || CODIGO -> YARN BABEL SRC/INDEX.JS --OUT-FILE DIST/BUNDLE.JS.
+1 - Criar um arquivo "INDEX.JS" e precisamos executar um comando nos arquivos da pasta raiz para que seja feita uma conversão dos codigos la colocados. || CODIGO -> YARN BABEL SRC/INDEX.JS --OUT-FILE DIST/BUNDLE.JS
 2 - Para o babel conseguir interpretar os codigos do HTML e necessário instalar um modulo, "yarn add @babel/preset-react -D" e logo depois adcionar o novo modulo na pasta do BABEL.CONFIG.JS - '@BABEL/PRESET-REACT'.
 || OBS: Apos ter instalado todo os codigos para que ele seja legivel pelo babel, podemos alterar o arquivo INDEX.js da raiz para INDEX.JSX, pois dessa forma o react consegue interpretar os codigos HTML em Javascript.
 
 // INSTLANDO E CONFIGURANDO WEBPACK.
 
-1 - 
+|| OBS: O WEBPACK e uma ferramenta que serve para importar arquivos como CSS,SSAS, entre outros para que seja legivel para os navegadores. por conta disso a maioria de alguns arquivos tambem de imagens são transformados em uma extensão legivel.
+
+1 - comando para instalar WEBPACK -> "yarn add webpack" que tambeme possivel instalar outras depedencias.
+ex: yarn add webpack/cli | yarn add webpack-dev-server -D
+
+2 - e necessário criar um arquivo de configuração igual ao do babel, que no caso ele tem o seguinte nome "webpack.config.js e no caso criar as funções necessarias para que ele possa converter os arquivos e depois instalar a função atribuida do babel-loader que e responsavel por fazer a integração com o webpack. COMANDO -> "yarn add babel-loader -D"
+
+3 - Criar um arquivo chamado APP.JSX ele e responsavel por funcinar em toda renderização, então depois de configurar e importar no arquivo 'index.JSX' , e so rodar o comando -> " yarn webpack "
+
+// CONFIGURAR ESTRUTURA DO REACT PARA VISUALZIAR.
+
+1 - CRIAR UMA DIV NO HTML COM ENDICAÇÃO DO "ROOT", PARA QUE ELE POSSA ENCHERGAR A APLICAÇÃO, TROCAR AS FUNÇÕES QUE ESTÃO NA PASTA INDEX.JSX E DEPOIS CRIAR UM SCRIPT NO HTML PARA QUE ELE POSSA RENDERIZAR OS ARQUIVOS GERADOS PELO BABEL. LEMBRANDO SEMPRE QUE QUALQUER ALTERAÇÃO TEM QUE DAR O COMANDO "YARN WABPACK".
