@@ -1,9 +1,12 @@
+import { Header } from "./components/Header";
+import { GlobalStyle } from "./Styles/Global";
 
 
-export function App(){
-  return(
-    <div>
-      <h1> Teste</h1>
-    </div>
+export function App() {
+  return (
+    <>
+      <Header />
+      <GlobalStyle />
+    </>
   )
 }
