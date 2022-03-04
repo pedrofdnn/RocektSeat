@@ -1,4 +1,4 @@
-## Projeto Dr Money
+## Projeto DT Money da RocketSeat
 1. Criar o Projeto inicial com uma biblioteca TypeScript. Comando -> yarn create react-app dtmoney --template typescript 
 2. instalar as extenções necessarias  -bold Comando -> yarn add styled-components / yarn add @types/styled-components bold-
 3. Criar os componentes com suas funcinalidades como no demostrativo.
