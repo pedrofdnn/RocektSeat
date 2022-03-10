@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { api } from "../Services";
+import { api } from "../../Services";
 import { Container } from "./styles";
 
 export function TransactionsTable() {
