@@ -9,11 +9,11 @@ export const GlobalStyle = createGlobalStyle`
 
      --blue-light:#6933ff;
 
-     --text-litle:#363f5f;
-     --text-body:#969cb3;
+     --text-litle:#363F5F;
+     --text-body:#969CB2;
 
-     --background:#f0f2f5;
-     --shape:#ffffff;
+     --background:#F0F2F5;
+     --shape:#FFFFFF;
 }
 
 * {
