@@ -1,8 +1,11 @@
 import logo from '../../Assets/logo.svg';
-import { ModalCo } from '../Modal';
 import { Container, Content } from './styles';
 
-export function Header() {
+interface HeaderProps {
+    onOpenNewTransactionModal: () => void;
+}
+
+export function Header({ onOpenNewTransactionModal }: HeaderProps) {
 
     return (
         <Container>
@@ -10,14 +13,10 @@ export function Header() {
                 <img src={logo} alt="DT Money" />
                 <button
                     type="button"
-                    onClick={HeaderProps}>
+                    onClick={onOpenNewTransactionModal}>
                     Nova Transação
                 </button>
-
-
-
             </Content>
-
         </Container>
     )
 }
